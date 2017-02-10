@@ -1,0 +1,76 @@
+{
+"tacts":[
+  {
+    "notes": [
+      {
+        "height": "-999",
+        "duration": "4",
+        "level":"-1"
+      },
+      {
+        "height": "-2",
+        "duration": "4",
+        "level":"-2"
+      },
+      {
+        "height": "5",
+        "duration": "4",
+        "level":"0"
+      },
+      {
+        "height": "9",
+        "duration": "4",
+        "level":"2"
+      },
+      {
+        "height": "8",
+        "duration": "4",
+        "level":"3"
+      },
+      {
+        "height": "5",
+        "duration": "4",
+        "level":"4"
+      }
+    ]
+  },
+  {
+    "notes": [
+      {
+        "height": "9",
+        "duration": "4",
+        "level":"2"
+      },
+      {
+        "height": "5",
+        "duration": "4",
+        "level":"-1"
+      },
+      {
+        "height": "8",
+        "duration": "4",
+        "level":"0"
+      },
+      {
+        "height": "5",
+        "duration": "4",
+        "level":"4"
+      },
+      {
+        "height": "0",
+        "duration": "4",
+        "level":"0"
+      },
+      {
+        "height": "2",
+        "duration": "4",
+        "level":"-1"
+      },
+      {
+        "height": "-2",
+        "duration": "1",
+        "level":"2"
+      }
+    ]
+  }
+]}

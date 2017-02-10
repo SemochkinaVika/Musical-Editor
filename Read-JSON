@@ -1,0 +1,43 @@
+package MusicalEditor;
+
+
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+
+import java.io.*;
+
+
+public class MusicalEditor {
+
+
+    public static String readFile(String filename) {
+        String result = "";
+        try {
+            BufferedReader bufread = new BufferedReader(new FileReader(filename));
+            StringBuilder strbuild = new StringBuilder();
+            String line = bufread.readLine();
+            while (line != null) {
+                strbuild.append(line);
+                line = bufread.readLine();
+            }
+            result = strbuild.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public static void main(String arg) {
+        String jsonData = readFile("first_json_file");
+        JSONObject object = new JSONObject(jsonData);
+        JSONArray array = new JSONArray(object.getJSONArray("notes").toString());
+        System.out.println("height: " + object.getString("height"));
+        for (int i = 0; i < array.length(); i++) {
+            System.out.println("Notes: " + array.getString(i));
+        }
+
+    }
+}
+

@@ -1,0 +1,23 @@
+Создали файл формата JSON. Надо научить пограмму читать его :
+
+{
+"notes": 
+[
+  {"height":-999,"duration":4},
+	{ "height": -2, "duration":4},
+	{ "height": 5, "duration": 4},
+	{ "height": 9, "duration": 4},
+ 
+	{ "height": 8, "duration": 4 },
+	{ "height": 5, "duration": 4 },
+	{ "height": 9, "duration": 4 },
+	{ "height": 5, "duration": 4 },
+
+	{ "height": 8, "duration": 4 },
+	{ "height": 5, "duration": 4 },
+	{ "height": 0, "duration": 4 },
+	{ "height": 2, "duration": 4 },
+	
+	{ "height": -2, "duration": 1 }
+]
+}

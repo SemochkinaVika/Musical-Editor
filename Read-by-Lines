@@ -1,0 +1,33 @@
+Чтение файла построчно
+
+package MusicalEditor;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStreamReader;
+
+public class ReadFile {
+    public ReadFile() throws FileNotFoundException {
+        String line = "";
+        String jsonData = "";
+
+        FileInputStream fis = new FileInputStream("/Users/vikalenovo/IdeaProjects/TestJSON/first_json_file.json");
+        InputStreamReader isr = new InputStreamReader(fis);
+        
+        BufferedReader br = new BufferedReader(isr);
+        try {
+            while ((line = br.readLine()) != null) {
+                jsonData += line + "\n";
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        System.out.println(jsonData);
+    }
+
+
+}
+
+
+
